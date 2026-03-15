@@ -56,6 +56,23 @@ body {
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   FAIXA DE URGÊNCIA
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+#urgencia-banner {
+  background-color: var(--laranja);
+  color: var(--branco);
+  padding: 8px 0;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#urgencia-banner p {
+  margin: 0;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    HEADER FIXO
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
@@ -410,6 +427,32 @@ body {
   flex-grow: 1;
 }
 
+.produto-pricing {
+  margin-bottom: 24px;
+}
+
+.preco-mercado {
+  font-size: 13px;
+  color: var(--cinza-escuro);
+  margin-bottom: 8px;
+}
+
+.valor-riscado {
+  text-decoration: line-through;
+  color: var(--cinza-escuro);
+}
+
+.preco-nosso {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+.valor-destaque {
+  color: var(--verde-sucesso);
+  font-size: 24px;
+}
+
 .produto-detalhes {
   display: flex;
   flex-direction: column;
@@ -461,13 +504,65 @@ body {
 }
 
 @media (min-width: 768px) {
-  #inventario {
+  #produtos {
     padding: 80px 0;
   }
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ESTRATÉGIAS DE LOTE
+   BANNER CTA INTERMEDIÁRIO
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+#banner-visita {
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  padding: 40px 0;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.banner-texto {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-banner {
+  background-color: var(--branco);
+  color: var(--azul-escuro);
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transicao);
+}
+
+.btn-banner:hover {
+  background-color: var(--laranja);
+  color: var(--branco);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .banner-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .banner-texto {
+    font-size: 22px;
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   LOTES DISPONÍVEIS
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 #lotes {
